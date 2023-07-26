@@ -72,9 +72,9 @@ resource "google_compute_instance" "default_count" {
 #################################################################
 #########              Multiple Buckets        ##################
 #################################################################
-resource "google_storage_bucket" "bucket" {
-  for_each = local.buckets
-  name     = each.key
-  location = "us-central1"
-}
+# resource "google_storage_bucket" "bucket" {
+#   for_each = local.buckets
+#   name     = each.key
+#   location = "us-central1"
+# }
 
